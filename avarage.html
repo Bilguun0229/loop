@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="myFunc()">Дарна уу</button>
+    <script>
+      const myFunc = function () {
+        let x;
+        let sum = 0;
+        let min='';
+        let max;
+        let avarage;
+        for (shirheg = 1; shirheg <= 5; shirheg++) {
+          x = Number(prompt("too"));
+          sum += x;
+          avarage = sum / shirheg;
+          // alert("niilber "+sum)
+          console.log(x);
+          // if(min<x){
+          //     alert("min" +min)
+          // }else {
+          //     min=x
+          //     alert(" бага утга " +min)
+          // }
+          // if(max>x){
+          //     alert(" max " + max)
+          // }else {
+          //     max=x
+          //     alert("их утга " +max)
+          // }
+          // alert("Дундаж утга " +avarage
+if(min==''){
+  min=x
+}else if(min>x){
+min=x
+}
+
+
+          // if (isNaN(min) || min > x) { 
+          //   min = x; 
+          // }
+          if (isNaN(max) || max < x) {
+            max = x;
+          }
+          alert(
+            "SUM: " +
+              sum +
+              "\nMIN: " +
+              min +
+              "\nMAX: " +
+              max +
+              "\nAVARAGE: " +
+              avarage
+          );
+        }
+      };
+    </script>
+  </body>
+</html>

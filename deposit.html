@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // dansand bgaa mongoo awna awsn mongiihoo huuug bodno hureh dungiin awch heden jiliin daraa hurehiin todorhoilox
+        let deposit=Number(prompt("Авах мөнгөн дүнгээ оруулна уу"))
+        const rateDeposi=Number(prompt("Хэдэн хувийн хүүтэй мөнгө"))
+        let threshold=Number(prompt("Хүрэх үр дүн"))
+        let jil = 0;
+        while(deposit<threshold){
+        rate=rateDeposi*deposit/100;
+        deposit=deposit+rate;
+        jil++;
+        } 
+        alert(jil);
+        
+    </script>
+</body>
+</html>
